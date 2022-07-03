@@ -27,7 +27,8 @@
 		<h2>
 			<h:outputText id="outputMessage"
 				value="#{userData.welcomeMessage != null ?
-            userData.welcomeMessage : ''}" /></h2>
+            userData.welcomeMessage : ''}" />
+		</h2>
 	</h:form>
 	<br />
 	<h2>Conditional Navigation</h2>
@@ -55,9 +56,12 @@
 	<h:form>
 		<h:commandLink action="#{navigationController.processPage1}"
 			value="Page1" />
-
+		<br />
 		<h:commandLink action="#{navigationController.processPage2}"
 			value="Page2" />
+		<br />
+		<h:commandLink action="#{navigationController.processUserName}"
+			value="Custom component" />
 
 	</h:form>
 	<br />
